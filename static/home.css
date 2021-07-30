@@ -42,7 +42,7 @@ body {
     background-color: white;
 }
 
-.home-content div.container {
+.container {
     margin: 4rem;
 }
 
@@ -56,7 +56,7 @@ body {
 
 .home-content div.container p { 
     font-size: 1.2rem;
-    font-family: unset;
+    font-family: sans-serif;
     margin-left: 4rem;
     margin-right: 4rem;
 }
@@ -73,3 +73,61 @@ body {
     line-height: 30px;
 }
 
+.about-content {
+    box-shadow:
+    0 0px 2.9px rgba(0, 0, 0, 0.081),
+    0 0px 9.6px rgba(0, 0, 0, 0.119),
+    0 0px 43px rgba(0, 0, 0, 0.2);
+    border-radius:0.5rem;
+    width: 100%;
+    background-color: white;
+}
+
+.about-content div.container h2 {
+    font-weight: 100;
+    font-family: monospace;
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.about-content div.container p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.team-section {
+    box-shadow:
+    0 0px 2.9px rgba(0, 0, 0, 0.081),
+    0 0px 9.6px rgba(0, 0, 0, 0.119),
+    0 0px 43px rgba(0, 0, 0, 0.2);
+    border-radius:0.5rem;
+    width: 100%;
+    background-color: white;
+}
+
+.team-section div.container {
+    margin: 4rem;
+}
+
+.team-section div.container h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+    margin: 1rem;
+}
+
+.team-section div.container h1::after {
+    content: "";
+    background:#333;
+    display: block;
+    height:0.2rem;
+    width: 5rem;
+    margin: 1rem auto;
+}
+
+.team-section div.container div.team {
+    display: flex;
+    margin: 2rem;
+}
