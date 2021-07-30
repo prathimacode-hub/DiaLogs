@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DiaLogs</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="DiaLogs">
+        <link rel="stylesheet" href="../static/home.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h1>Dialogs</h1>
+                <h3>Kindey diseases analysis</h3>
+            </div>
+        </div>
+        <div class="home-content">
+            <div class="container">
+                <h2>OVERVIEW</h2>
+                <p>
+                    The function of a kidney is to filter wastes and excess fluids 
+                    from your blood, which are then excreted in your urine. Chronic
+                    kidney diseases also known as Chronic kidey failure describes the
+                    gradual loss of the kidney. According to a survery conducted in 2017, India
+                    was ranked 6th in the world for prevalencerates for Chronic kidney diseases 
+                    accross the globe.
+                </p>
+                <h2>What are the different types of kidney diseases?</h2>
+                <ul>
+                    <li>Chronic kidney disease</li>
+                    <p>It is the most common form of kidney disease. It is a long term condition and 
+                        chances of improvement are very less and is mainly caused by high bloof pressure and diabetes.
+                    </p>
+                    <li>Kidney stones</li>
+                    <p>Kidney stones are another common problem that occurs when minerals and other substances
+                        in the blood crystallize forming solid stone like masses. They usually come out of the 
+                        body during urination and it's very painful.
+                    </p>
+                    <li>Glomerulonephritis</li>
+                    <p>Glomerulonephritis is an inflammation of the glomeruli. Glomeruli are extremely small structures inside the kidneys that filter the blood. Glomerulonephritis can be caused by infections, drugs, or congenital abnormalities (disorders that occur during or shortly after birth). It often gets better on its own.</p>
+                    <li>Polycystic kidney disease</li>
+                    <p>Polycystic kidney disease is a genetic disorder that causes numerous cysts (small sacs of fluid) to grow in the kidneys. These cysts can interfere with kidney function and cause kidney failure. (It’s important to note that individual kidney cysts are fairly common and almost always harmless. Polycystic kidney disease is a separate, more serious condition).</p>
+                    <li>Urinary tract infections</li>
+                    <p>Urinary tract infections are bacterial infections of any part of the urinary system. Infections in the bladder and urethra are the most common. They are easily treatable and rarely lead to more health problems. However, if left untreated, these infections can spread to the kidneys and cause kidney failure.</p>
+                </ul>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+            
+                    function drawChart() {
+            
+                    var data = google.visualization.arrayToDataTable([
+                        ['age', 'How prone they are'],
+                        ['18-44',      6],
+                        ['45-64',   12.4],
+                        ['65+',     38.1],
+                        
+                    ]);
+            
+                    var options = {
+                        title: 'How prone the different age groups are to kidney diseases today.'
+                    };
+            
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            
+                    chart.draw(data, options);
+                    }
+                </script>
+            
+                <body>
+                <div id="piechart" style="width: 900px; height: 500px;"></div>
+                </body>
+            </div>
+        </div>
+    </body>
+</html>
