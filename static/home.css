@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 body {
-    background-color: whitesmoke;
+    background-color: rgb(114, 20, 236);
     margin: 2rem;
     padding: 0;
 }
@@ -9,7 +11,7 @@ body {
     0 0px 2.9px rgba(0, 0, 0, 0.081),
     0 0px 9.6px rgba(0, 0, 0, 0.119),
     0 0px 43px rgba(0, 0, 0, 0.2);
-    border-radius:0.5rem;
+    border-radius:0.3rem;
     width: 100%;
     height: 110px;
     background-color: white;
@@ -32,12 +34,12 @@ body {
     text-decoration: none;
 }
 
-.home-content {
+.home {
     box-shadow:
     0 0px 2.9px rgba(0, 0, 0, 0.081),
     0 0px 9.6px rgba(0, 0, 0, 0.119),
     0 0px 43px rgba(0, 0, 0, 0.2);
-    border-radius:0.5rem;
+    border-radius:0.3rem;
     width: 100%;
     background-color: white;
 }
@@ -46,7 +48,7 @@ body {
     margin: 4rem;
 }
 
-.home-content div.container h2 {
+.home-content div.container h1 {
     font-weight: 100;
     font-family: monospace;
     font-size: 2rem;
@@ -73,15 +75,7 @@ body {
     line-height: 30px;
 }
 
-.about-content {
-    box-shadow:
-    0 0px 2.9px rgba(0, 0, 0, 0.081),
-    0 0px 9.6px rgba(0, 0, 0, 0.119),
-    0 0px 43px rgba(0, 0, 0, 0.2);
-    border-radius:0.5rem;
-    width: 100%;
-    background-color: white;
-}
+
 
 .about-content div.container h2 {
     font-weight: 100;
@@ -98,15 +92,6 @@ body {
     margin-right: 4rem;
 }
 
-.team-section {
-    box-shadow:
-    0 0px 2.9px rgba(0, 0, 0, 0.081),
-    0 0px 9.6px rgba(0, 0, 0, 0.119),
-    0 0px 43px rgba(0, 0, 0, 0.2);
-    border-radius:0.5rem;
-    width: 100%;
-    background-color: white;
-}
 
 .team-section div.container {
     margin: 4rem;
@@ -129,5 +114,15 @@ body {
 
 .team-section div.container div.team {
     display: flex;
-    margin: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.team-section div.container div.team >* {
+    width: 100%;
+    text-align: center
+}
+
+.team-section div.container h1 {
+    font-family: 'Allura', cursive;
 }
