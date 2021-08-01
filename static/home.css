@@ -161,3 +161,7 @@ body {
     font-size: 2rem;
     margin-bottom: 0rem;
 }
+
+.home.contact-us div.container h1 {
+    font-family: monospace;
+}
