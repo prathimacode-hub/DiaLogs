@@ -148,7 +148,7 @@ body {
     background-color: rgb(46, 46, 194);
     color: white;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .home.contact-us div.container div.ContactInfo  {
@@ -164,4 +164,6 @@ body {
 
 .home.contact-us div.container h1 {
     font-family: monospace;
+    font-size: 2rem;
+    padding-top: 1rem;
 }
