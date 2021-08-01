@@ -13,7 +13,7 @@ def kidney():
 	if request.method=='GET':
 		return render_template('kidneyform.html')
 	else:
-		with open('kidney_predict','rb') as f:
+		with open('kidney_prediction','rb') as f:
 			model=pickle.load(f)
 		Age=int(request.form['Age'])
 		Blood_Pressure=int(request.form['Blood_Pressure'])
@@ -23,7 +23,7 @@ def kidney():
 		Red_Blood_Cells=int(request.form['Red_Blood_Cells'])
 		new=np.array([[Age,Blood_Pressure,Specific_Gravity,Albumin,Sugar,Red_Blood_Cells]])
 		y_pred=model.predict(new)
-		return render_template('result3.html',y_pred=y_pred)
+		return render_template('result.html',y_pred=y_pred)
 
 
 @app.route('/about')
