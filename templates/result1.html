@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<head>
+  <title>DiaLogs</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="DiaLogs">
+  <link rel="stylesheet" href="../static/result.css">
+</head>
+
+
+<section class="new" style="height: 30%;width: 100%;margin-top: 5%;">
+  <h2>Kidney Stone Predictor</h2>
+  <h5>An ML algorithm which predicts whether an individual has stones formed in their kidney.</h5>
+</section>
+
+
+
+{% if y_pred==0 %}
+
+<div id="content">
+  <h1 style="color: green;color: red;margin-left: 25%;margin-top: 15%;">That's a Relief. You don't have any symptoms of stones formed in the kidney./h1>
+</div>
+
+
+{% endif %}
+{% if y_pred==1 %}
+
+  <h1 style="color: red;margin-left: 25%;margin-top: 15%;">Ooops, be cautious hereafter, you have symptoms of stones formation in your kidney.</h1>
+
+{% endif %}
+
+
+
+{% endblock %}
