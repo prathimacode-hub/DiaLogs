@@ -45,22 +45,26 @@ body {
 }
 
 .container {
-    margin: 4rem;
+    margin: 2rem;
 }
 
 .home-content div.container h1 {
     font-weight: 100;
     font-family: monospace;
     font-size: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    padding-top: 1.2rem;
 }
 
 .home-content div.container p { 
     font-size: 1.2rem;
     font-family: sans-serif;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom:1.2rem ;
 }
 
 .home-content div.container ul {
@@ -74,24 +78,6 @@ body {
     margin-left: 1rem;
     line-height: 30px;
 }
-
-
-
-.about-content div.container h2 {
-    font-weight: 100;
-    font-family: monospace;
-    font-size: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-}
-
-.about-content div.container p {
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    margin-left: 4rem;
-    margin-right: 4rem;
-}
-
 
 .team-section div.container {
     margin: 4rem;
@@ -168,4 +154,10 @@ body {
 .home.contact-us div.container div.ContactInfo  {
     justify-content: center;
     margin-left: 5rem;
+}
+
+.home.overview-content div.container h2 {
+    font-family: monospace;
+    font-size: 2rem;
+    margin-bottom: 0rem;
 }
