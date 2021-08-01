@@ -26,5 +26,5 @@ model=LogisticRegression(max_iter=1200000)
 
 model.fit(X_train,y_train)
 
-with open('kidney_predict','wb') as f:
+with open('kidney_prediction','wb') as f:
 	pickle.dump(model,f)
