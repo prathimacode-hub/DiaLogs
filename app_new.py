@@ -11,9 +11,9 @@ app=Flask(__name__)
 @app.route('/kidneydisease',methods=['GET','POST'])
 def kidney():
 	if request.method=='GET':
-		return render_template('kidneyform.html')
+		return render_template('kidney_disease_form.html')
 	else:
-		with open('kidney_prediction','rb') as f:
+		with open('kidney_disease_prediction','rb') as f:
 			model=pickle.load(f)
 		Age=int(request.form['Age'])
 		Blood_Pressure=int(request.form['Blood_Pressure'])
@@ -24,7 +24,23 @@ def kidney():
 		new=np.array([[Age,Blood_Pressure,Specific_Gravity,Albumin,Sugar,Red_Blood_Cells]])
 		y_pred=model.predict(new)
 		return render_template('result.html',y_pred=y_pred)
-
+	
+@app.route('/kidneystone',methods=['GET','POST'])
+def kidney():
+	if request.method=='GET':
+		return render_template('kidney_stone_prediction.html')
+	else:
+		with open('kidney_stone_prediction','rb') as f:
+			model=pickle.load(f)
+		Age=int(request.form['Age'])
+		Blood_Pressure=int(request.form['Blood_Pressure'])
+		Specific_Gravity=float(request.form['Specific_Gravity'])
+		Albumin=int(request.form['Albumin'])
+		Sugar=int(request.form['Sugar'])
+		Red_Blood_Cells=int(request.form['Red_Blood_Cells'])
+		new=np.array([[Age,Blood_Pressure,Specific_Gravity,Albumin,Sugar,Red_Blood_Cells]])
+		y_pred=model.predict(new)
+		return render_template('result1.html',y_pred=y_pred)
 
 @app.route('/about')
 def about():
