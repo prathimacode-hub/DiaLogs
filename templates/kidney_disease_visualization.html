@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>DiaLogs</title>
+        <title>Visualizations</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Why Us?">
+        <meta name="description" content="Kidney Disease Visualizations">
         <link rel="stylesheet" href="../static/home.css">
     </head>                                                                                                      
                                                 
@@ -13,67 +13,72 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">Why Us?</a>
+    <a class="navbar-brand" href="#">Kidney Disease Visualizations</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="/">Why Us?</a>
+        <a class="nav-link" href="/">Kidney Disease Visualizations</a>
     </ul>
     </a>
       </li>
   </div>
   <div class="container">
-<h2>Project</h2>
-    <h3>It's a machine learning app with visualizations of how kidney related problems are differentiated:</h3>
-    <p>This project is a place to store all the logs concerned with kidney related problems. 
-       You can get every information such as kidney disease prediction, kidney stone prediction, 
-       overview of various chronical diseases one can get encountered with, visualizations of all 
-       the aspects while addressing the concerns and seriourness of this issue. Along with it, 
-       you can get various tips to prevent yourself from getting affected with or cure back to 
-       normal lifestyle. Thus, titled the name as "DiaLogs"</p>
+<h2>Visualize it</h2>
+    <h3>Here we shall visualize and differentiate various kidney related problem</h3>
+    <p>Let's get into more briefer aspects of renal and nephrology concepts</p>
  
-<h2>Kidney Diseases</h2>
+<h2>Healthy Kidneys Vs Diseased Kidneys </h2>
 <div style="text-align: center; margin-top: 20px">
-       <img style="max-width: 400px" src="{{ url_for('static', filename='kidney.jpg') }}"/>
+       <img style="max-width: 400px" src="{{ url_for('static', filename='normal_disease.jpg') }}"/>
    </div>
 <h2>Overview</h2>
-<p>There are various types of diseases such as Chronic Kidney Diseases, Kidney Stones, Glomerulonephritis, 
-  Polycystic kidney diseases, Urinary tract infections and many more. Large number of population especially 
-  in India, are suffering through these vulnerable diseases especially one's who had to undergo dialysis 
-  treatment regularly. </p>
+<p>This is a comparison of normal Vs diseased kidney. We can notice how healthy kidney looks like rather than diseased one. </p>
+      
+<h2>Chronic Kidney Diseases</h2>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='chronic_kidney_disease.jpg') }}"/>
+   </div>
+<h2>Overview</h2>
+<p>It shows visualization of chronic kidney diseases where the right and left kidneys are infected.</p>
 
-<h2>Features this project endorses with:</h2>
- <ul>
-  <li>Kidney Disease Predictor is provided for individuals to check if they are prone to kidney diseases.</li>
-  <li>Kidney Stone Prediction to check if the patient has stones formed in their kidney once again using ML.</li>
-  <li>Visualizations are provided to showcase how it's differentiated when considering a patient who is normal, 
-    suffering from kidney disease, inclulcated with kidney stones, who is undergoing dialysis treatment.</li>
-  <li>We have a separate section of Tips to prevent from kidney related diseases or to overcome it for better.</li>
-</ul>
-<br> 
-    
-<h2>Solution</h2>
-<p>This project would be an asset to all the individuals who are prone to or patients who are undergoing various 
-  medical ailments for kidney related diseases.This would be a one stop place to check on with their health conditions 
-  and as well get good guidance on same to overcome this predominant issue.</p> <br>
-    
-<h2>Future Aspects</h2>
- <ul>
-  <li>We would like to add more real time visualizations of the data through the scanning done for kidney and see its complications</li>
-  <li>We also have an idea of incorporating the visualizations of patients who had to suffer kidney failure especially contracted through 
-    the genes of their family.</li>
-  <li>Along with, we would like to make it into a full time mobile app with various add-on features to support kidney disease patients where 
-    they can check up from their comfort of their homes.</li>
-  <li>We can also add up all the nerphologist doctors for consultation through this app, so that they can interact with patients directly 
-   and also patients simultaneously can provide the scans and medical here and clear out their queries. This is well needed in 
-   current pandemic situation where they can get access to all the facilities through the comfort of their homes.</li>
-</ul>
+<h2>Kidney Stones</h2>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='kidney_stone.jpg') }}"/>
+   </div><br>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='kidney_stone1.jpg') }}"/>
+   </div><br>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='kidney_stone2.jpg') }}"/>
+   </div>
+<h2>Overview</h2>
+<p>We could notice the formation of stones with ranges shown in mm to see how it's spread across the kidney</p>
+      
+<h2>Cysts</h2>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='cysts.jpg') }}"/>
+   </div><br>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='multiple%20cysts.gif') }}"/>
+   </div><br>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='polycystic.gif') }}"/>
+   </div>
+<h2>Overview</h2>
+<p>Visualizations of multiple cysts inside kidney and how it's populated can be seen here.</p>
+      
+<h2>Dialysis</h2>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='dialysis.jpg') }}"/>
+   </div><br>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 400px" src="{{ url_for('static', filename='dialysis%201.gif') }}"/>
+   </div>
+<h2>Overview</h2>
+<p>Visualization of dialysis treatment and how kidney looks in dialysis patients</p>
+      
 <br> 
 <hr>
 <br>
-
-{% block content %}
-
-{% endblock %}
                                                     
 </body>
 </html>
