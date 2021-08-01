@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+
+<section class="new" style="height: 30%;width: 100%;margin-top: 5%;">
+  <h2 style="margin-left: 40%;">Kidney Disease Predictor</h2>
+  <h5 style="margin-left: 37%;">An ML algorithm which predicts whether an individual is suffering from kidney disease or not.</h5>
+</section>
+
+
+
+{% if y_pred==0 %}
+
+<div id="content">
+<h1 style="color: green;color: red;margin-left: 25%;margin-top: 15%;">That's a Relief. You don't have any symptoms of Kidney Disease.</h1>
+</div>
+
+
+{% endif %}
+{% if y_pred==1 %}
+
+<h1 style="color: red;margin-left: 25%;margin-top: 15%;">Ooops, be careful. You have symptoms of kidney disease.</h1>
+
+{% endif %}
+
+
+
+{% endblock %}
