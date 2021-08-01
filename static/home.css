@@ -167,3 +167,15 @@ body {
     font-size: 2rem;
     padding-top: 1rem;
 }
+
+.navbar div.collapse ul {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar div.collapse ul li {
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}

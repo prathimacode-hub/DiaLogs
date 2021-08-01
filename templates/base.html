@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% block content %}
 <html>
     <head>
         <title>DiaLogs</title>
@@ -7,39 +8,35 @@
         <link rel="stylesheet" href="../static/home.css">
     </head>                                                                                                      
                                                 
-<body>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">                                                
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">DiaLogs</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/why_us">Why Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/kidney_disease_form">Kidney Disease Predictor</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/kidney_stone_form">Kidney Stone Predictor</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/kidney_disease_visualization">Kidney Disease Visualization</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/tips_to_overcome">Tips to Overcome</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-{% block content %}
-
-{% endblock %}
-                                                    
-</body>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">                                                
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">DiaLogs</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="why_us.html">Why Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kidney_disease_form.html">Kidney Disease Predictor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kidney_stone_form.html">Kidney Stone Predictor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kidney_disease_visualization.html">Kidney Disease Visualization</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tips_to_overcome.html">Tips to Overcome</a>
+          </li>
+        </ul>
+      </div>
+    </nav>                                        
+  </body>
 </html>
+{% endblock %}
