@@ -20,8 +20,11 @@ We had built using python, machine learning, flask, html and css. We had incorpo
 ## FEATURES ENDORSED WITH📍🔖
 
 - Kidney Disease Predictor is provided for individuals to check if they are prone to kidney diseases.
+- 
 - Kidney Stone Prediction to check if the patient has stones formed in their kidney once again using ML.
+- 
 - Visualizations are provided to showcase how it's differentiated when considering a patient who is normal, suffering from kidney disease, inclulcated with kidney stones, who is undergoing dialysis treatment.
+- 
 -We have a separate section of Tips to prevent from kidney related diseases or to overcome it for better.
 
 
