@@ -9,7 +9,7 @@ I can't say this as inspiration, instead this idea generated from all the patien
 
 This project is a place to store all the logs concerned with kidney related problems. You can get every information such as kidney disease prediction, kidney stone prediction, overview of various chronical diseases one can get encountered with, visualizations of all the aspects while addressing the concerns and seriourness of this issue. Along with it, you can get various tips to prevent yourself from getting affected with or cure back to normal lifestyle. Thus, titled the name as "DiaLogs"
 
-Project submitted for : **VIZATHON & GSB HACKS**
+Project submitted for : **VIZATHON, TECH4U HACKS & GSB HACKS**
 
 
 ## HOW IT'S BUILT🛠🔑
